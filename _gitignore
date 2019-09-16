@@ -1,0 +1,11 @@
+[user]
+	name = <YOUR DEFAULT NAME>
+	email = <YOUR DEFAULT EMAIL ID>
+
+[includeIf "gitdir:/Users/gk/Workspace/code/"]
+  path = .gitconfig-work
+
+[includeIf "gitdir:/Users/gk/Workspace/git/"]
+  path = .gitconfig-me
+
+# ... rest of the file ... 

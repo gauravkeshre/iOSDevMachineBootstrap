@@ -9,14 +9,9 @@ function mkcd(){
   mkdir $@
   cd $@
 }
-function hh(){
-  WORK_PATH="/Users/GauravKeshre/Workspace/HX/"
-  echo "Opening $WORK_PATH ..."
-  cd $WORK_PATH
-}
 
 function work(){
-  WORK_PATH="/Users/gauravkeshre/Workspace/Microsoft/Teamspace-iOS"
+  WORK_PATH="path to project"
   echo "Opening $WORK_PATH ..."
   cd $WORK_PATH
   ls

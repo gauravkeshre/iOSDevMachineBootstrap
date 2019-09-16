@@ -112,28 +112,3 @@ function getUDID {
     done
   fi
 }
-
-#-------
-# Finder Commands
-#-------
-
-function mkcd(){
-  echo "creating $@ ..."
-  mkdir $@
-  cd $@
-}
-function hh(){
-  WORK_PATH="/Users/GauravKeshre/Workspace/HX/"
-  echo "Opening $WORK_PATH ..."
-  cd $WORK_PATH
-}
-
-function work(){
-  # WORK_PATH="/Users/GauravKeshre/Workspace/Zoomcar/zc-ios-2.0/"
-  WORK_PATH="/Users/gauravkeshre/Workspace/Microsoft/Teamspace-iOS"
-  echo "Opening $WORK_PATH ..."
-  cd $WORK_PATH
-  ls
-  git status
-  find $WORK_PATH -maxdepth 1  -type d -name "*.xcworkspace" -print | xargs open -g
-}
